@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="10dip"
+        android:layout_marginBottom="10dip"
+        >
+
+        <com.telpo.tpx910_demo.utils.CustomButton
+            android:id="@+id/bt_fail"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.0"
+            android:text="不通过"
+            android:textSize="18sp"
+            android:background="#ff61a8ff"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            />
+
+        <com.telpo.tpx910_demo.utils.CustomSpinner android:id="@+id/testItemSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.0"
+            android:layout_marginTop="10dip"/>
+
+        <com.telpo.tpx910_demo.utils.CustomButton
+            android:id="@+id/bt_pass"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.0"
+            android:layout_marginTop="10dip"
+            android:text="通过"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:background="#ff61a8ff"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            />
+
+        <com.telpo.tpx910_demo.utils.CustomButton
+            android:id="@+id/buttonClose"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.0"
+            android:layout_marginTop="10dip"
+            android:text="退出当前测试"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:background="#ff0000"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

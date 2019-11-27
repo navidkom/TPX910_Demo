@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">TPX910_Demo</string>
+    <string name="title_alarm">Alarm</string>
+    <string name="title_relay">Relay</string>
+    <string name="title_rs485">RS485</string>
+    <string name="title_SerialPort">SerialPort</string>
+    <string name="rs485_send">Send Mode</string>
+    <string name="rs485_receive">Receive Mode</string>
+    <string name="rs485_rs232_titlte">Click Send to send the message first through the serial port. The received data will be displayed in the receiving area below.</string>
+</resources>

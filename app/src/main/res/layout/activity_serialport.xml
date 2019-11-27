@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFFFF"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="30"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            android:id="@+id/VibratorTestLayout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:gravity="center"
+                android:text="RS485/RS232 Test"
+                android:textColor="#FF000000"
+                android:textSize="30sp"
+                />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="@string/rs485_rs232_titlte"
+                android:textSize="24sp" />
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                tools:context=".MainActivity">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <android.support.v7.widget.AppCompatSpinner
+                        android:id="@+id/device_choose"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                    <Button
+                        android:id="@+id/send"
+                        android:layout_weight="3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Send"
+                        android:textSize="20dp"
+                        />
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                    <ToggleButton
+                        android:id="@+id/rs485_mode"
+                        android:layout_weight="3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:textSize="20dp"
+                        android:textOff="RS485 model disabled"
+                        android:textOn="RS485 model enabled"
+                        />
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="send:"
+                    android:textSize="20dp"
+                    />
+                <TextView
+                    android:id="@+id/send_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Serial_test "
+                    android:textSize="30dp"
+                    android:textColor="#FDFEFE"
+                    android:background="#1ABC9C"
+                    android:lines="2"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="receive:"
+                    android:textSize="20dp"
+                    />
+                <TextView
+                    android:id="@+id/receive"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="30dp"
+                    android:textColor="#FDFEFE"
+                    android:background="#1ABC9C"
+                    android:lines="6"
+                    />
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            >
+
+            <LinearLayout android:id="@+id/RightBound12"
+                android:orientation="vertical"
+                android:layout_width="5dip"
+                android:layout_height="match_parent"
+                android:background="@drawable/right_line"
+                >
+            </LinearLayout>
+
+            <LinearLayout android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dip"
+                >
+
+                <include
+                    android:id="@+id/viewBottom12"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    layout="@layout/select_item"
+                    android:focusable="false"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+
+        <LinearLayout android:id="@+id/BottomBound12"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="5dip"
+            android:background="@drawable/bottom_line"
+            >
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
+
